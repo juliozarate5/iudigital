@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"
+    />
+    <title>IUDigital Stereo</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/bootstrap-material-design.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/css.css" />
+    <style>
+      img {
+        width: 80%;
+      }
+
+      img .sonido {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar"
+    >
+      <a class="navbar-brand" href="#"><img src="./img/logo.png"/></a>
+      <ul class="navbar-nav bd-navbar-nav flex-row">
+        <li>IUDigital Stereo</li>
+      </ul>
+    </nav>
+    <main role="main">
+      <div class="jumbotron">
+        <div class="container container-fluid text-center">
+          <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+              <div class="col-md-8">
+                <p>
+                  <img
+                    class="sonido"
+                    src="./img/air.gif"
+                  />
+                </p>
+                <p>
+                  <button
+                    type="button"
+                    id="play"
+                    class="btn btn-outline-primary"
+                  >
+                    PLAY
+                  </button>
+                  <button
+                    type="button"
+                    id="pausa"
+                    class="btn btn-outline-primary"
+                  >
+                    PAUSE
+                  </button>
+                </p>
+                <p>
+                  <button
+                    type="button"
+                    id="volumemas"
+                    class="btn btn-outline-primary"
+                  >
+                    +
+                  </button>
+                  <button
+                    type="button"
+                    id="volumemenos"
+                    class="btn btn-outline-primary"
+                  >
+                    -
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- /container -->
+        </div>
+      </div>
+      <div class="container container-fluid text-center">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-4">
+            <p>
+              Bienvenido a tu emisora favorita, escucha la mejor música y
+              noticias sobre nuestra Alma Mater Virtual
+            </p>
+          </div>
+        </div>
+        
+        <audio id="emisora">
+            <!-- aqui URL de la radio que deseemos-->
+          <source src="http://live3.rcnmundo.com/rumbabarranca.mp3" type="audio/mpeg" />
+          Your browser does not support HTML5 audio.
+        </audio>
+      </div>
+      <!-- /container -->
+    </main>
+
+    <footer class="container">
+      <p>© IUDigital 2019</p>
+    </footer>
+    <script type="text/javascript" src="./js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="./js/popper.js"></script>
+    <script  type="text/javascript"  src="./js/bootstrap-material-design.js"></script>
+    <script src="./js/fastclick.js"></script>
+    <script src="./js/gestures.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+  </body>
+</html>
